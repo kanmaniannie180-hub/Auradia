@@ -1,0 +1,54 @@
+{
+  "name": "AnonymousPost",
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string",
+      "description": "Anonymous message"
+    },
+    "emotion_tag": {
+      "type": "string",
+      "enum": [
+        "stress",
+        "sad",
+        "hope",
+        "gratitude",
+        "anxiety",
+        "healing",
+        "lonely",
+        "growth",
+        "overwhelmed",
+        "proud"
+      ]
+    },
+    "reactions": {
+      "type": "object",
+      "properties": {
+        "relate": {
+          "type": "number",
+          "default": 0
+        },
+        "strong": {
+          "type": "number",
+          "default": 0
+        },
+        "care": {
+          "type": "number",
+          "default": 0
+        },
+        "matter": {
+          "type": "number",
+          "default": 0
+        },
+        "with_you": {
+          "type": "number",
+          "default": 0
+        }
+      }
+    }
+  },
+  "required": [
+    "text",
+    "emotion_tag"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "VoiceEntry",
+  "type": "object",
+  "properties": {
+    "audio_url": {
+      "type": "string",
+      "description": "URL to the recorded audio file"
+    },
+    "duration_seconds": {
+      "type": "number"
+    },
+    "transcript": {
+      "type": "string",
+      "description": "Text transcribed or typed from the voice entry"
+    },
+    "detected_emotion": {
+      "type": "string",
+      "enum": [
+        "happy",
+        "calm",
+        "sad",
+        "stressed",
+        "angry",
+        "excited",
+        "anxious",
+        "lonely",
+        "confident",
+        "neutral"
+      ],
+      "description": "Primary detected emotion"
+    },
+    "intensity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "description": "Intensity of detected emotion"
+    },
+    "intensity_score": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Numeric intensity 1-5"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reflection_note": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "audio_url"
+  ]
+}

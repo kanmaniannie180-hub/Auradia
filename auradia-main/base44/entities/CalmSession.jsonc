@@ -1,0 +1,44 @@
+{
+  "name": "CalmSession",
+  "type": "object",
+  "properties": {
+    "exercise_type": {
+      "type": "string",
+      "enum": [
+        "relax_4_4_6",
+        "deep_calm_4_7_8",
+        "equal_4_4_4_4",
+        "slow_5_5_7"
+      ],
+      "description": "Breathing exercise type"
+    },
+    "duration_seconds": {
+      "type": "number"
+    },
+    "audio_track": {
+      "type": "string",
+      "enum": [
+        "silence",
+        "piano",
+        "rain",
+        "ocean"
+      ]
+    },
+    "post_mood": {
+      "type": "string",
+      "enum": [
+        "much_better",
+        "better",
+        "same",
+        "worse"
+      ]
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "exercise_type",
+    "duration_seconds"
+  ]
+}

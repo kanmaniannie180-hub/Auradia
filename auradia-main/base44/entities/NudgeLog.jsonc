@@ -1,0 +1,33 @@
+{
+  "name": "NudgeLog",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "encouragement",
+        "action",
+        "self_care",
+        "reflection",
+        "motivation",
+        "reassurance",
+        "pause",
+        "celebrate"
+      ]
+    },
+    "suggested_action": {
+      "type": "string"
+    },
+    "accepted": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "message",
+    "category"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Mood",
+  "type": "object",
+  "properties": {
+    "emotion": {
+      "type": "string",
+      "enum": [
+        "happy",
+        "calm",
+        "neutral",
+        "sad",
+        "stressed",
+        "angry",
+        "anxious",
+        "tired",
+        "excited",
+        "grateful"
+      ],
+      "description": "The emotion type"
+    },
+    "intensity": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Intensity level 1-5"
+    },
+    "note": {
+      "type": "string",
+      "description": "Optional note about what influenced this feeling"
+    },
+    "day_period": {
+      "type": "string",
+      "enum": [
+        "morning",
+        "afternoon",
+        "evening",
+        "night"
+      ]
+    }
+  },
+  "required": [
+    "emotion",
+    "intensity"
+  ],
+  "rls": {
+    "read": {
+      "created_by": "{{user.email}}"
+    },
+    "update": {
+      "created_by": "{{user.email}}"
+    },
+    "delete": {
+      "created_by": "{{user.email}}"
+    },
+    "write": {
+      "created_by": "{{user.email}}"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Ripple",
+  "type": "object",
+  "properties": {
+    "action_text": {
+      "type": "string",
+      "description": "The positive action"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "self_care",
+        "kindness",
+        "mindfulness",
+        "health",
+        "reflection",
+        "growth",
+        "environment",
+        "social"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "suggested",
+        "accepted",
+        "completed",
+        "skipped"
+      ],
+      "default": "suggested"
+    },
+    "completion_note": {
+      "type": "string"
+    },
+    "duration_minutes": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "action_text",
+    "category"
+  ]
+}

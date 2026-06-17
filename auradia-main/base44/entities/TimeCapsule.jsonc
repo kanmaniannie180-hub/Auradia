@@ -1,0 +1,62 @@
+{
+  "name": "TimeCapsule",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Optional title for the capsule"
+    },
+    "message": {
+      "type": "string",
+      "description": "Message to future self"
+    },
+    "emotion_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Emotion tags like hope, healing, growth"
+    },
+    "mood": {
+      "type": "string",
+      "description": "Primary mood when capsule was created"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Image URLs attached to capsule"
+    },
+    "voice_url": {
+      "type": "string",
+      "description": "URL to voice recording"
+    },
+    "unlock_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date when capsule can be opened"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "locked",
+        "unlockable",
+        "opened"
+      ],
+      "default": "locked"
+    },
+    "reflection": {
+      "type": "string",
+      "description": "Reflection after opening"
+    },
+    "opened_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "message",
+    "unlock_date"
+  ]
+}

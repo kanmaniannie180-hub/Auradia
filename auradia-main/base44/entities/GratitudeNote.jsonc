@@ -1,0 +1,34 @@
+{
+  "name": "GratitudeNote",
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string",
+      "description": "Gratitude text"
+    },
+    "emoji": {
+      "type": "string",
+      "description": "Associated emoji"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "joy",
+        "people",
+        "nature",
+        "moments",
+        "self",
+        "achievement",
+        "simple"
+      ],
+      "default": "simple"
+    },
+    "reflection": {
+      "type": "string",
+      "description": "Later reflection on this note"
+    }
+  },
+  "required": [
+    "text"
+  ]
+}
