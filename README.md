@@ -115,16 +115,7 @@ Auradia follows a modular architecture consisting of:
 
 The complete architecture diagram is included in the repository.
 
-Place your architecture image inside:
-
-```text
-assets/architecture/
-└── auradia-architecture.png
-```
-
-And reference it as:
-
-![Auradia Architecture](assets/architecture/auradia-architecture.png)
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/cfeeee93-13a7-4f5c-a89d-15b0e2a2612b" />
 
 ---
 
@@ -132,32 +123,28 @@ And reference it as:
 
 The UI/UX prototype screenshots are available in the repository.
 
-Place screenshots inside:
-
-```text
-assets/screenshots/
-├── home-page.png
-├── mood-bubbles.png
-├── emotional-map.png
-├── time-capsule.png
-├── ripple-effects.png
-├── ai-mood-coach.png
-└── calm-zone.png
-```
-
-Example:
 
 ### Home Dashboard
 
-![Home Dashboard](assets/screenshots/home-page.png)
+<img width="482" height="871" alt="image" src="https://github.com/user-attachments/assets/4cc64869-e11e-41a5-9cd3-d1c968e1454b" />
+
 
 ### Mood Bubbles
 
-![Mood Bubbles](assets/screenshots/mood-bubbles.png)
+<img width="475" height="840" alt="image" src="https://github.com/user-attachments/assets/287fd9e2-f61d-4f32-8d23-bdfec4061edf" />
 
 ### Time Capsule
 
-![Time Capsule](assets/screenshots/time-capsule.png)
+<img width="474" height="859" alt="image" src="https://github.com/user-attachments/assets/1671381a-e401-43e2-a5b9-0884320bbdb1" />
+
+### Calm Zone 
+
+<img width="500" height="877" alt="image" src="https://github.com/user-attachments/assets/2d4d8fdb-d24c-4ef3-b929-c649a3465762" />
+
+### Explore other features
+
+<img width="479" height="859" alt="image" src="https://github.com/user-attachments/assets/c48b8884-a903-4118-be26-5b551f1e13b7" />
+
 
 ---
 
